@@ -15,6 +15,6 @@ jobs:
     - name: 'Checkout codes'
       uses: actions/checkout@v1
     - name: checkIn Yingyun
-      run: python3 CheckIn.py -e ${{secrets.userName}}-p ${{secrets.password}} -s "https://yingyun-g.pw"
+      run: python3 CheckIn.py -e ${{secrets.USERNAME}}-p ${{secrets.PASSWORD}} -s "https://yingyun-g.pw"
     - name: checkIn JiJi
-      run: python3 CheckIn.py -e ${{secrets.userName}} -p ${{secrets.password}} -s "https://j03.space"
+      run: python3 CheckIn.py -e ${{secrets.USERNAME}}-p ${{secrets.PASSWORD}} -s "https://j03.space"
