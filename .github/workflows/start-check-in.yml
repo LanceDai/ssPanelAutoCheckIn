@@ -5,7 +5,7 @@ name: Start ssPanl CheckIn
 
 on:
  schedule:
-  # 定时任务，在每天的5点推送天气信息到邮箱
+  # 定时任务，在每天的5点进行机场签到
   - cron: '0 21 * * *'
 
 jobs:
