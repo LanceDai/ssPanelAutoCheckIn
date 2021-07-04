@@ -21,5 +21,3 @@ jobs:
       run: python -m pip install --upgrade pip && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: checkIn Yingyun
       run: python3 CheckIn.py -e ${{secrets.USERNAME}}-p ${{secrets.PASSWORD}} -s "https://yingyun-g.pw"
-    - name: checkIn JiJi
-      run: python3 CheckIn.py -e ${{secrets.USERNAME}}-p ${{secrets.PASSWORD}} -s "https://j03.space"
