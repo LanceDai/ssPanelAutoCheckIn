@@ -4,6 +4,8 @@
 name: Start ssPanl CheckIn
 
 on:
+ watch:
+    types: started
  schedule:
   # 定时任务，在每天的8点进行机场签到
   - cron: '0 0 * * *'
@@ -11,6 +13,7 @@ on:
 jobs:
   checkIn:
     runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
     steps: 
     - name: 'Checkout codes'
       uses: actions/checkout@v1
